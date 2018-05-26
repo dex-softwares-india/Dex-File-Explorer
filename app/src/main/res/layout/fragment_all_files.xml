@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hitesh.dexfileexplorer.allFiles">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.example.hitesh.dexfileexplorer.CircleDisplay
+        android:id="@+id/circleDisplay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Storage"
+        android:textSize="16dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13 GB / 25 GB"
+        android:textSize="12dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="45dp"/>
+
+    <TextView
+        android:id="@+id/path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="path>path>path>"
+        android:textSize="14dp"
+        android:background="#e8eaed"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="10dp"/>
+
+    <ListView
+        android:id="@+id/view_files"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="118dp"
+        tools:listitem="@layout/files_adapter"></ListView>
+</FrameLayout>
